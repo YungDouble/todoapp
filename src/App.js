@@ -18,6 +18,7 @@ class App extends Component {
       todos: todos  //es6 shortcut since key and value have the same namy, we could write just todos
     })
   }
+  // when a new todo is added a random id is assigned
   addTodo = (todo) => {
     todo.id = Math.random();
     let todos = [...this.state.todos, todo]; 
