@@ -6,7 +6,8 @@ class App extends Component {
   state = {
     todos: [
       {id: 1, content: 'buy some milk'},
-      {id: 2, content: 'play mario kart'}
+      {id: 2, content: 'play mario kart'},
+      {id: 3, content: 'browser the hub'} // added new item
     ]
   }
 //Below we create a new todos array, it takes in the ID as a parameter and compares the ID to the current todo that is being parsed
@@ -29,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="todo-app container" >
-        <h1 className="center blue-text">Todos</h1>
+        <h1 className="center green-text">Todos</h1> //changed color to green
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
         <AddTodo addTodo={this.addTodo} />
       </div>
