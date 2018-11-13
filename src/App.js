@@ -7,7 +7,8 @@ class App extends Component {
     todos: [
       {id: 1, content: 'buy some milk'},
       {id: 2, content: 'play mario kart'},
-      {id: 3, content: 'browser the hub'} // added new item
+      {id: 3, content: 'browse the hub'}, // added new item
+      {id: 4, Content: 'look for aparment'} // new item
     ]
   }
 //Below we create a new todos array, it takes in the ID as a parameter and compares the ID to the current todo that is being parsed
